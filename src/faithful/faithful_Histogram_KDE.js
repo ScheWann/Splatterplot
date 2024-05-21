@@ -15,7 +15,7 @@ export const FaithfulHistogramKDE = () => {
                         .attr("width", width)
                         .attr("height", height);
         
-        svg.selectAll("#faithfulHistogram").remove();
+        svg.selectAll("*").remove();
 
         const kernelDensityEstimator = (kernel, X) => {
             return function (V) {
